@@ -1,0 +1,75 @@
+//Khai bao
+typedef struct Sinhvien
+{
+	mssv;
+	hoten;
+}SV;
+typedef Sinhvien ElementType;
+typedef struct Node
+{
+  ElementType Element;
+  Node* Next;
+}N;
+typedef Node* Position;
+typedef Node* List;
+//Khoi tao danh sach rong
+void MakeNullList(List &L)
+{
+    L = new Node;
+    L->Next=NULL;
+}
+//Kiem tra danh sach rong
+int EmptyList(List L)
+{  
+    return L->Next==NULL; 
+}
+//Them X vao cuoi danh sach
+void Insert_Last( X, &L)
+{  	
+	p=L;
+	trong khi p->Next!=NULL
+		p->Next;
+	Temp=new Node;
+	Giá giá tr? Temp->Element.mssv b?ng X.mssv;
+	S? d?ng strcpy() gán giá tr? X.hoten cho Temp->Element.hoten
+	Gán: Temp->Next thành p->Next; 
+	Gán p->Next thành Temp; 	
+} 
+//Nhap danh sach bang them cuoi. 
+void Input_List(L)
+{  	
+	Kh?i t?o DS L r?ng
+	ElementType t;
+	do
+	{
+		Nhap ma so sinh vien:";
+		t.mssv;
+		cin.ignore(1);
+		"Nhap ho ten sinh vien:";
+		getline(t.hoten,30);
+		N?u t.mssv!=0 G?i hàm Insert_Last();		
+	}while(t.mssv!=0);		
+} 
+//Liet ke danh sach
+void Output_List(L)
+{  	
+	i=1;
+	t=L;
+	Trong khi t->Next!=NULL
+	{
+		In ra thông tin
+		t->Next->Element.mssv
+		t->Next->Element.hoten
+		t->Next
+		t?ng bi?n ??m i		
+	}
+} 
+//Them X vao dau danh sach
+void Insert_First(X, &L)
+{  	
+	T?o bi?n Temp;
+	Gán X.mssv cho Temp->Element.mssv
+	Gán X.hoten cho Temp->Element.hoten;
+	Gán Temp->Next b?ng L->Next; 
+	Gán L->Next b?ng Temp; 	
+} 
